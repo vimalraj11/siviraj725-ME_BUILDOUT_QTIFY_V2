@@ -8,8 +8,12 @@ function Card({ image, title, follows }) {
       <div className={styles.imageWrapper}>
         <img src={image} alt={title} />
 
-        <div className={styles.chip}>
-          <Chip label={`${follows} Follows`} size="small" />
+        <div className={styles.chipWrapper}>
+          <Chip
+            label={`${follows} Follows`}
+            size="small"
+            className={styles.chip}
+          />
         </div>
       </div>
 

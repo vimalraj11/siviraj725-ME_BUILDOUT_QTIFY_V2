@@ -13,6 +13,11 @@ function App() {
         title="Top Albums"
         apiUrl="https://qtify-backend.labs.crio.do/albums/top"
       />
+
+      <Section
+        title="New Albums"
+        apiUrl="https://qtify-backend.labs.crio.do/albums/new"
+      />
     </div>
   );
 }
