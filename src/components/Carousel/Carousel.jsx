@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import styles from "./Carousel.module.css";
 import CarouselLeftNavigation from "../CarouselLeftNavigation/CarouselLeftNavigation";
 import CarouselRightNavigation from "../CarouselRightNavigation/CarouselRightNavigation";
@@ -29,9 +28,9 @@ function Carousel({ data, renderItem }) {
           swiperRef.current = swiper;
         }}
         onSlideChange={updateNavState}
+        onAfterInit={updateNavState}
         onReachBeginning={updateNavState}
         onReachEnd={updateNavState}
-        onAfterInit={updateNavState}
       >
         {data.map((item) => (
           <SwiperSlide key={item.id} className={styles.slide}>

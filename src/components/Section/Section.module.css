@@ -29,3 +29,24 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tabs :global(.MuiTabs-indicator) {
+  background-color: var(--color-green);
+}
+
+.tabs :global(.MuiTab-root) {
+  color: var(--color-white);
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: auto;
+  padding: 12px 16px;
+}
+
+.tabs :global(.Mui-selected) {
+  color: var(--color-green);
+}

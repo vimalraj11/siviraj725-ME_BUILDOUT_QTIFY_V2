@@ -4,22 +4,22 @@ import styles from "./CarouselLeftNavigation.module.css";
 function CarouselLeftNavigation({ onClick, disabled }) {
   return (
     <button
+      type="button"
       className={`${styles.navButton} ${styles.left}`}
       onClick={onClick}
       disabled={disabled}
       aria-label="Previous"
-      type="button"
     >
       <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="12" cy="12" r="12" fill="white" />
+        <circle cx="16" cy="16" r="16" fill="white" />
         <path
-          d="M13.985 7.41L9.395 12L13.985 16.59L12.575 18L6.575 12L12.575 6L13.985 7.41Z"
+          d="M18.48 10.34L12.82 16L18.48 21.66L16.74 23.4L9.34 16L16.74 8.6L18.48 10.34Z"
           fill="black"
         />
       </svg>

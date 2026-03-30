@@ -12,11 +12,19 @@ function App() {
       <Section
         title="Top Albums"
         apiUrl="https://qtify-backend.labs.crio.do/albums/top"
+        type="album"
       />
 
       <Section
         title="New Albums"
         apiUrl="https://qtify-backend.labs.crio.do/albums/new"
+        type="album"
+      />
+
+      <Section
+        title="Songs"
+        apiUrl="https://qtify-backend.labs.crio.do/songs"
+        type="songs"
       />
     </div>
   );
